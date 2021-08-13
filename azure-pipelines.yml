@@ -24,4 +24,4 @@ stages:
       displayName: Login to ACR
       inputs:
         command: login
-        containerRegistry: dockerHub
+        containerRegistry: Docker hub
