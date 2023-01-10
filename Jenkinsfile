@@ -16,13 +16,7 @@ pipeline {
             steps {
                 script {
                     gv = load 'script.groovy'
-                }
-            }
-        }
-        stage('check branch') {
-            steps {
-                script {
-                    branch()
+			sh('ls')
                 }
             }
         }
@@ -44,7 +38,7 @@ pipeline {
 					     [
 						     sshPublisherDesc
 						     (
-							configName: 'server2', 
+							configName: 'server3', 
 							transfers: 
 							[
 								sshTransfer(
